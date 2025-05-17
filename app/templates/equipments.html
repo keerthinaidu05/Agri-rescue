@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Section</title>
+    <style>
+        /* Basic styling for the section */
+        #equipment-section {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        #equipment-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Use CSS Grid to create 6 cards per row */
+        .items-container {
+            display: grid;                         /* Using grid for layout */
+            grid-template-columns: repeat(6, 1fr); /* 6 columns per row */
+            gap: 10px;                             /* Reduced gap between items */
+            justify-items: center;                 /* Center items horizontally */
+        }
+
+        /* Ensure each item has a consistent size */
+        .item {
+            text-align: center;
+            cursor: pointer;
+            padding: 20px;                          /* Reduced padding */
+            border-radius: 8px;                    /* Rounded corners around the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around items */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 110px;                          /* Slightly reduced width */
+            height: 160px;                         /* Reduced height */
+            display: flex;
+            flex-direction: column;                /* Align content vertically */
+            justify-content: center;               /* Center the text and image */
+            align-items: center;                   /* Center the image and text horizontally */
+        }
+
+        /* Add hover effect to item */
+        .item:hover {
+            transform: scale(1.05); /* Slightly enlarge the item on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+        /* Style for the image placeholder */
+        .image-placeholder {
+            width: 70px;           /* Smaller size for placeholder */
+            height: 70px;          /* Same as width to make it circular */
+            border-radius: 50%;     /* Circular shape */
+            overflow: hidden;       /* Hide overflow (images outside the circle) */
+            display: flex;
+            justify-content: center; /* Center image inside the placeholder */
+            align-items: center;     /* Center image vertically */
+            background-color: #f0f0f0; /* Placeholder background color */
+            margin-bottom: 10px;      /* Space between image and text */
+        }
+
+        /* Style for the text below each image */
+        .item p {
+            font-size: 14px;        /* Adjust font size for consistency */
+            color: #333;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Equipment Section -->
+    <div class="section active" id="equipment-section">
+        <h2>Agriculture Equipment</h2>
+
+        <!-- Equipment List with Individual Images -->
+        <div class="items-container">
+            <div class="item" onclick="window.location.href='tractor.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6h59YwAkcJGJJJ1nO01rWQy2ayGzZAA86fA&s" alt="Tractor">
+                </div>
+                <p>Tractor</p>
+            </div>
+            <div class="item" onclick="window.location.href='plow.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnm3NQ1vTAnYfU0fKDj2mlMiN-MK9oYUMv2A&s" alt="Plow">
+                </div>
+                <p>Plow</p>
+            </div>
+            <div class="item" onclick="window.location.href='hoe.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkVuhtTijFN0IUlP746rnGsScgsHUsyQV2ow&s" alt="Hoe">
+                </div>
+                <p>Hoe</p>
+            </div>
+            <div class="item" onclick="window.location.href='harvester.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDVsOzjvMfdfcJ7fAIR0C0fZXi_9ZWtmt4Kw&s" alt="Harvester">
+                </div>
+                <p>Harvester</p>
+            </div>
+            <div class="item" onclick="window.location.href='sprayer.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc0RXnr8pflL-VT8mWkBygKH7RpfB07wiS_g&s" alt="Sprayer">
+                </div>
+                <p>Sprayer</p>
+            </div>
+            <div class="item" onclick="window.location.href='rake.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT_Isn6jmXP8yewxae7E3AMMLyuiLBieoh4g&s" alt="Rake">
+                </div>
+                <p>Rake</p>
+            </div>
+            <div class="item" onclick="window.location.href='sickle.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlGtmKC8KEwdfDzzoccD33yqdJPNQ-7wjX7Q&s" alt="Sickle">
+                </div>
+                <p>Sickle</p>
+            </div>
+            <div class="item" onclick="window.location.href='pickaxe.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2zUqCbbu0r83CzH-AcpYMSr7HEkcz3SSV2Q&s" alt="Pickaxe">
+                </div>
+                <p>Pickaxe</p>
+            </div>
+            <div class="item" onclick="window.location.href='seeddrill.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc0RXnr8pflL-VT8mWkBygKH7RpfB07wiS_g&s" alt="Seed Drill">
+                </div>
+                <p>Seed Drill</p>
+            </div>
+            <div class="item" onclick="window.location.href='pruningshears.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb3LW1tUxzERcmwL13MKOPyrafUJVzZXHkGA&s" alt="Pruning Shears">
+                </div>
+                <p>Pruning Shears</p>
+            </div>
+            <div class="item" onclick="window.location.href='axe.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT_Isn6jmXP8yewxae7E3AMMLyuiLBieoh4g&s" alt="Axe">
+                </div>
+                <p>Axe</p>
+            </div>
+            <div class="item" onclick="window.location.href='handcultivator.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2zUqCbbu0r83CzH-AcpYMSr7HEkcz3SSV2Q&s" alt="Hand Cultivator">
+                </div>
+                <p>Hand Cultivator</p>
+            </div>
+            <div class="item" onclick="window.location.href='weeder.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnm3NQ1vTAnYfU0fKDj2mlMiN-MK9oYUMv2A&s" alt="Weeder">
+                </div>
+                <p>Weeder</p>
+            </div>
+            <div class="item" onclick="window.location.href='roller.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc0RXnr8pflL-VT8mWkBygKH7RpfB07wiS_g&s" alt="Roller">
+                </div>
+                <p>Roller</p>
+            </div>
+            <div class="item" onclick="window.location.href='fertilizerspreader.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDVsOzjvMfdfcJ7fAIR0C0fZXi_9ZWtmt4Kw&s" alt="Fertilizer Spreader">
+                </div>
+                <p>Fertilizer Spreader</p>
+            </div>
+            <div class="item" onclick="window.location.href='seeder.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkVuhtTijFN0IUlP746rnGsScgsHUsyQV2ow&s" alt="Seeder">
+                </div>
+                <p>Seeder</p>
+            </div>
+            <div class="item" onclick="window.location.href='trailerswagons.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnm3NQ1vTAnYfU0fKDj2mlMiN-MK9oYUMv2A&s" alt="Trailers/Wagons">
+                </div>
+                <p>Trailers/Wagons</p>
+            </div>
+            <div class="item" onclick="window.location.href='irrigationsystem.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc0RXnr8pflL-VT8mWkBygKH7RpfB07wiS_g&s" alt="Irrigation System">
+                </div>
+                <p>Irrigation System</p>
+            </div>
+            <div class="item" onclick="window.location.href='shovel.html'">
+                <div class="image-placeholder">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDVsOzjvMfdfcJ7fAIR0C0fZXi_9ZWtmt4Kw&s" alt="Shovel">
+                </div>
+                <p>Shovel</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
