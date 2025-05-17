@@ -53,7 +53,6 @@ Working Project Fram/
 1. **Clone the repository:**
     ```sh
     git clone <repository-url>
-
     ```
 
 2. **Install dependencies:**
